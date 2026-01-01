@@ -1,24 +1,35 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
-
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Home Page - Portfolio Rafael Scarpato
+ * Neo-Brutalism Digital Design
+ * Single Page Application with smooth scroll navigation
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
 
+import WebGLBackground from "@/components/WebGLBackground";
+import Navigation from "@/components/Navigation";
+import Hero from "@/components/Hero";
+import ProjectsGrid from "@/components/ProjectsGrid";
+import SkillsMatrix from "@/components/SkillsMatrix";
+import BlogSection from "@/components/BlogSection";
+import ContactFooter from "@/components/ContactFooter";
+
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen">
+      {/* WebGL animated background */}
+      <WebGLBackground />
+      
+      {/* Fixed navigation */}
+      <Navigation />
+      
+      {/* Main content sections */}
       <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+        <section id="home">
+          <Hero />
+        </section>
+        <ProjectsGrid />
+        <SkillsMatrix />
+        <BlogSection />
+        <ContactFooter />
       </main>
     </div>
   );
