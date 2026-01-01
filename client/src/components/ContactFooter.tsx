@@ -8,9 +8,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Twitter, Download, Mail } from "lucide-react";
 import { useState, FormEvent } from "react";
-import { toast } from "sonner";
+import { useNotification } from "@/contexts/NotificationContext";
 
 export default function ContactFooter() {
+  const { showSuccess, showError } = useNotification();
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -60,10 +62,16 @@ export default function ContactFooter() {
     
     if (!hasErrors) {
       // Success - in a real app, send to backend
-      toast.success("Mensagem enviada com sucesso!");
+      showSuccess(
+        "Mensagem Enviada!",
+        "Obrigado pelo contato. Responderei em breve."
+      );
       setFormData({ name: "", email: "", message: "" });
     } else {
-      toast.error("Por favor, corrija os erros no formulário");
+      showError(
+        "Erro no Formulário",
+        "Por favor, corrija os campos destacados."
+      );
     }
   };
   

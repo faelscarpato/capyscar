@@ -11,6 +11,7 @@ import ProjectsGrid from "@/components/ProjectsGrid";
 import SkillsMatrix from "@/components/SkillsMatrix";
 import BlogSection from "@/components/BlogSection";
 import ContactFooter from "@/components/ContactFooter";
+import NotificationDemo from "@/components/NotificationDemo";
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
         <ProjectsGrid />
         <SkillsMatrix />
         <BlogSection />
+        <section id="notifications">
+          <NotificationDemo />
+        </section>
         <ContactFooter />
       </main>
     </div>

@@ -10,6 +10,7 @@ const navItems = [
   { id: "projects", label: "PROJETOS" },
   { id: "skills", label: "HABILIDADES" },
   { id: "blog", label: "ARTIGOS" },
+  { id: "notifications", label: "NOTIFICAÇÕES" },
   { id: "contact", label: "CONTATO" }
 ];
 
