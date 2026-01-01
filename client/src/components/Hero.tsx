@@ -23,7 +23,7 @@ export default function Hero() {
   };
   
   return (
-    <section className="min-h-screen flex items-center relative overflow-hidden">
+    <section className="min-h-screen mt-24 flex items-center relative overflow-hidden">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Main content - asymmetric positioning */}
@@ -70,7 +70,7 @@ export default function Hero() {
                 className="brutal-border bg-transparent hover:bg-white hover:text-black text-white font-bold text-lg px-8 py-6 transition-all hover:translate-x-1 hover:translate-y-1"
               >
                 <a 
-                  href="https://github.com/rafael-scarpato" 
+                  href="https://github.com/faelscarpato" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="GitHub de Rafael Scarpato"
