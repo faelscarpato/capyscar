@@ -6,7 +6,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Twitter, Download, Mail } from "lucide-react";
+import { Github, Linkedin, Instagram, Download, Mail } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { useNotification } from "@/contexts/NotificationContext";
 
