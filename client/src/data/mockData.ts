@@ -30,7 +30,7 @@ export const projects: Project[] = [
   {
     id: "1",
     name: "CapyUniverse",
-    description: "Plataforma experimental que reúne múltiplas ferramentas baseadas em IA em uma interface única, explorando design, modularidade e experiência do usuário.",
+    description: "Plataforma que centraliza múltiplas ferramentas baseadas em IA em uma interface única, explorando design modular, experiência do usuário e integração de recursos",
     technologies: ["HTML", "CSS", "JavaScript", "APIs", "Design System"], 
     demoUrl: "https://capyuniverse.pages.dev/",
     githubUrl: "https://github.com/faelscarpato/capyuniverse"
@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     id: "2",
     name: "CapyUNI - IDE",
-    description: "Ambiente de desenvolvimento web com IA e persistência local, Editor de código leve e moderno no navegador, com suporte a edição persistente (IndexedDB), integração com Monaco Editor e potencial para suporte de IA.",
+    description: "IDE web moderna com persistência local e editor avançado no navegador, integrando Monaco Editor, armazenamento IndexedDB e base preparada para uso de IA",
     technologies: ["IndexedDB", "React", "TypeScript", "Monaco Editor", "xterm.js"],
     demoUrl: "https://capyuniv2.pages.dev/",
     githubUrl: "https://github.com/faelscarpato/capyuniv2"
@@ -46,7 +46,8 @@ export const projects: Project[] = [
   {
     id: "3",
     name: "Buscaki",
-    description: "Catálogo de empresas com pesquisa e filtros - Site estático que exibe lista de empresas, com interface de pesquisa e exibição de detalhes. Projeto focado em manipulação de dados locais e interface dinâmica cliente-lado",
+    description: "Catálogo estático de empresas com sistema de busca e filtros, focado em manipulação de dados locais, interface dinâmica no cliente e organização visual clara
+",
     technologies: ["HTML", "CSS", "JavaScript"],
     demoUrl: "https://faelscarpato.github.io/Buscaki/",
     githubUrl: "https://github.com/faelscarpato/Buscaki"
@@ -54,7 +55,8 @@ export const projects: Project[] = [
   {
     id: "4",
     name: "Genios",
-    description: "Protótipo para explorar experiências de IA,conversando em liguagem natural com genios do passodo.",
+    description: "Protótipo experimental de IA que permite conversas em linguagem natural com gênios históricos, explorando narrativa, interação e experiência conversacional
+",
     technologies: ["React", "TypeScript", "Vite"],
     demoUrl: "https://demo.example.com/weather",
     githubUrl: "https://github.com/rafael-scarpato/weather-dashboard"
@@ -62,7 +64,7 @@ export const projects: Project[] = [
   {
     id: "5",
     name: "CapyContrato Elite",
-    description: "Aplicação que gera contratos personalizados utilizando a API Gemini. Permite, compor cláusulas, alterar o tom da linguagem e visualizar o contrato antes de exportar",
+    description: "Aplicação que gera contratos personalizados com IA, permitindo compor cláusulas, ajustar o tom jurídico e visualizar o documento antes da exportação final",
     technologies: ["React", "TypeScript", "TailwindCSS", "Vite", "localStorage"],
     demoUrl: "https://demo.example.com/ai-content",
     githubUrl: "https://github.com/rafael-scarpato/ai-generator"
@@ -70,7 +72,7 @@ export const projects: Project[] = [
   {
    id: "6",
   name: "ReGift",
-  description: "Plataforma web para troca e doação de itens que você não usa mais, com foco em praticidade e proximidade. O usuário cria perfil (nome, WhatsApp e raio de busca), publica itens com foto, título e descrição, e navega por um feed tipo swipe mostrando itens próximos com base na geolocalização. Ao curtir, o sistema cria o match e libera o contato direto via WhatsApp para combinar a retirada. Inclui autenticação, upload de imagens e listagem de itens/matches em tempo real via Supabase.",
+  description: "Plataforma web de troca e doação de itens com geolocalização, feed por proximidade, sistema de match e contato direto via WhatsApp em tempo real",
   technologies: ["Next.js (App Router)","React","TypeScript","TailwindCSS","Supabase (Auth + Postgres + Storage)","PostGIS / Geolocalização"],
   demoUrl: "https://regift.pages.dev/",
   githubUrl: "https://github.com/faelscarpato/regift"
@@ -78,14 +80,14 @@ export const projects: Project[] = [
   {
       id: "7",
   name: "CapyContrato - Elite",
-  description:"CapyChart é um webapp do ecossistema CapyUniverse focado em gerar e visualizar gráficos de forma rápida e bonita. A interface permite inserir dados, escolher tipos de gráfico e visualizar o resultado em tempo real, com layout responsivo e visual ‘capy-style’. O projeto vem estruturado como app moderno em React + Vite, pronto para rodar localmente e evoluir para integrações com Supabase/IA dentro do hub do CapyUniverse.",
+  description:"Webapp do ecossistema CapyUniverse para criação e visualização de gráficos interativos em tempo real, com layout responsivo e experiência visual capy-style.",
   technologies: ["React","TypeScript","TailwindCSS","Vite","Gemini AP","IndexedDB"],
   githubUrl: "https://github.com/faelscarpato/capychart"
   },
    {
       id: "8",
   name: "DaVinci",
-  description:"Assistente criativo que cria aplicações ou códigos com base em um prompt textual, permitindo escolher modos (“app”, “davinci”, “fusion”) e anexar arquivos para melhorar o contexto",
+  description:"Assistente criativo que gera aplicações e códigos a partir de prompts, com modos variados de execução e suporte a anexos para enriquecer o contexto",
   technologies: ["React","TypeScript","TailwindCSS","Vite","Gemini AP","IndexedDB"],
     demoUrl: "https://davinci-82s.pages.dev/",
    githubUrl: "https://github.com/faelscarpato/DaVinci"
@@ -93,7 +95,7 @@ export const projects: Project[] = [
    {
       id: "9",
   name: "FullSearchAI",
- description:"Assistente de pesquisa que utiliza Gemini para sintetizar informações de artigos e fontes online, permitindo ajustar complexidade, formato de resposta e idioma",
+ description:" Assistente de pesquisa que utiliza Gemini para sintetizar informações de artigos e fontes online, permitindo ajustar complexidade, formato de resposta e idioma",
   technologies: ["React","TypeScript","TailwindCSS","Vite","Gemini AP","IndexedDB"],
        demoUrl: "https://fullsearchai.pages.dev/",
      githubUrl: "https://github.com/faelscarpato/fullsearchai"
@@ -101,7 +103,7 @@ export const projects: Project[] = [
  {
   "id": "10",
   "name": "Cardápio - LandPage de Lanchonete",
-  "description": "LandPage de lanchonete com cardápio interativo e funcionalidade para envio automático do pedido via WhatsApp",
+  "description": "Landing page de lanchonete com cardápio interativo e funcionalidade para envio automático de pedidos via WhatsApp, focada em uso rápido e direto.",
   "technologies": [
     "HTML",
     "CSS",
