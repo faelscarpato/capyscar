@@ -7,16 +7,59 @@ import { useMemo } from "react";
 
 export default function SkillsMatrix() {
   // Dados integrados conforme solicitado para substituir os antigos
-  const skillsData = [
-    { name: "Adobe Photoshop", proficiency: 85, category: "Designer Gráfico" },
-    { name: "Adobe Illustrator", proficiency: 70, category: "Designer Gráfico" },
-    { name: "Adobe Photoshop Lightroom", proficiency: 65, category: "Designer Gráfico" },
-    { name: "CorelDraw", proficiency: 65, category: "Designer Gráfico" },
-    { name: "HTML", proficiency: 85, category: "Desenvolvimento Web" },
-    { name: "CSS", proficiency: 70, category: "Desenvolvimento Web" },
-    { name: "JAVASCRIPT", proficiency: 55, category: "Desenvolvimento Web" },
-    { name: "PHP", proficiency: 15, category: "Desenvolvimento Web" },
-  ];
+ const skillsData = [
+  // =========================
+  // DESIGN GRÁFICO & VISUAL
+  // =========================
+  { name: "Adobe Photoshop", proficiency: 90, category: "Design Gráfico" },
+  { name: "Adobe Illustrator", proficiency: 75, category: "Design Gráfico" },
+  { name: "Adobe Photoshop Lightroom", proficiency: 75, category: "Design Gráfico" },
+  { name: "CorelDRAW", proficiency: 70, category: "Design Gráfico" },
+
+  // =========================
+  // UI / UX & DESIGN DIGITAL
+  // =========================
+  { name: "UI Design", proficiency: 80, category: "UI/UX" },
+  { name: "UX Design", proficiency: 70, category: "UI/UX" },
+  { name: "Design Systems", proficiency: 65, category: "UI/UX" },
+  { name: "Responsividade & Mobile First", proficiency: 85, category: "UI/UX" },
+
+  // =========================
+  // DESENVOLVIMENTO WEB
+  // =========================
+  { name: "HTML5", proficiency: 90, category: "Desenvolvimento Web" },
+  { name: "CSS3", proficiency: 80, category: "Desenvolvimento Web" },
+  { name: "JavaScript", proficiency: 70, category: "Desenvolvimento Web" },
+
+  // =========================
+  // FRAMEWORKS & FRONT-END
+  // =========================
+  { name: "Tailwind CSS", proficiency: 85, category: "Front-end" },
+  { name: "React.js", proficiency: 65, category: "Front-end" },
+  { name: "Next.js", proficiency: 60, category: "Front-end" },
+
+  // =========================
+  // BACK-END & DADOS
+  // =========================
+  { name: "PHP", proficiency: 20, category: "Back-end" },
+  { name: "Supabase (Auth + DB)", proficiency: 70, category: "Back-end" },
+  { name: "SQL Básico", proficiency: 60, category: "Back-end" },
+
+  // =========================
+  // IA, AUTOMAÇÃO & PRODUTO
+  // =========================
+  { name: "Integração com APIs de IA (Gemini / OpenAI)", proficiency: 80, category: "IA & Automação" },
+  { name: "Prompt Engineering", proficiency: 85, category: "IA & Automação" },
+  { name: "Automação de Fluxos com IA", proficiency: 75, category: "IA & Automação" },
+
+  // =========================
+  // FERRAMENTAS & WORKFLOW
+  // =========================
+  { name: "Git & GitHub", proficiency: 70, category: "Ferramentas" },
+  { name: "Vite / Build Front-end", proficiency: 65, category: "Ferramentas" },
+  { name: "Deploy (Cloudflare / GitHub Pages)", proficiency: 75, category: "Ferramentas" },
+];
+
 
   const skillsByCategory = useMemo(() => {
     const grouped = {};
