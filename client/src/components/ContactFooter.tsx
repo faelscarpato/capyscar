@@ -78,18 +78,18 @@ export default function ContactFooter() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/rafael-scarpato",
+      url: "https://github.com/faelscarpato",
       icon: Github
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/rafael-scarpato",
+      url: "https://linkedin.com/in/faelscarpato",
       icon: Linkedin
     },
     {
       name: "Twitter",
-      url: "https://twitter.com/rafael-scarpato",
-      icon: Twitter
+      url: "https://instagram/rafaelscarpato",
+      icon: Instagram
     }
   ];
   
