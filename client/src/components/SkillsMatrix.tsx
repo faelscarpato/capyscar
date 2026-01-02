@@ -1,77 +1,84 @@
 /**
- * Skills Matrix Component
- * Neo-Brutalism Digital Design: Bold progress indicators
+ * Skills Matrix Component - Ultra-Compact Neo-Brutalism
+ * Otimizado para densidade de informação e impacto visual.
  */
 
-import { skills } from "@/data/mockData";
 import { useMemo } from "react";
 
 export default function SkillsMatrix() {
-  // Group skills by category
+  // Dados integrados conforme solicitado para substituir os antigos
+  const skillsData = [
+    { name: "Adobe Photoshop", proficiency: 85, category: "Designer Gráfico" },
+    { name: "Adobe Illustrator", proficiency: 70, category: "Designer Gráfico" },
+    { name: "Adobe Photoshop Lightroom", proficiency: 65, category: "Designer Gráfico" },
+    { name: "CorelDraw", proficiency: 65, category: "Designer Gráfico" },
+    { name: "HTML", proficiency: 85, category: "Desenvolvimento Web" },
+    { name: "CSS", proficiency: 70, category: "Desenvolvimento Web" },
+    { name: "JAVASCRIPT", proficiency: 55, category: "Desenvolvimento Web" },
+    { name: "PHP", proficiency: 15, category: "Desenvolvimento Web" },
+  ];
+
   const skillsByCategory = useMemo(() => {
-    const grouped: Record<string, typeof skills> = {};
-    
-    skills.forEach((skill) => {
+    const grouped = {};
+    skillsData.forEach((skill) => {
       if (!grouped[skill.category]) {
         grouped[skill.category] = [];
       }
       grouped[skill.category].push(skill);
     });
-    
     return grouped;
   }, []);
-  
+
   const categories = Object.keys(skillsByCategory);
-  
+
   return (
-    <section id="skills" className="py-24 bg-secondary">
-      <div className="container">
-        {/* Section title */}
-        <div className="mb-16">
-          <div className="inline-block brutal-border brutal-shadow-sm bg-accent p-4 mb-6">
-            <h2 className="text-5xl md:text-7xl font-black text-black">
-              HABILIDADES
+    <section id="skills" className="py-12 bg-secondary">
+      <div className="container mx-auto px-4">
+        {/* Section title - Reduzido para não dominar a viewport */}
+        <div className="mb-10 text-center lg:text-left">
+          <div className="inline-block brutal-border brutal-shadow-sm bg-accent p-3 mb-4">
+            <h2 className="text-4xl md:text-5xl font-black text-black uppercase tracking-tighter">
+              Habilidades
             </h2>
           </div>
-          <p className="text-xl text-muted-foreground max-w-2xl">
-            Experiência técnica em desenvolvimento full-stack, desde front-end moderno 
-            até infraestrutura e DevOps.
+          <p className="text-lg text-muted-foreground max-w-xl font-medium">
+            Design de alta performance e código limpo. A síntese entre estética e funcionalidade.
           </p>
         </div>
-        
-        {/* Skills grid by category */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        {/* Skills grid - Layout mais denso */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {categories.map((category, categoryIndex) => (
             <div
               key={category}
-              className="brutal-border brutal-shadow bg-card p-8"
+              className="brutal-border brutal-shadow bg-card p-5"
               style={{
-                transform: categoryIndex % 2 === 0 ? 'rotate(-0.5deg)' : 'rotate(0.5deg)'
+                transform: categoryIndex % 2 === 0 ? 'rotate(-0.3deg)' : 'rotate(0.3deg)'
               }}
             >
-              {/* Category title */}
-              <h3 className="text-3xl font-black text-accent mb-6 font-display">
+              {/* Category title - Compacto */}
+              <h3 className="text-xl font-black text-accent mb-4 font-display border-b-2 border-accent pb-1 inline-block">
                 {category}
               </h3>
               
-              {/* Skills list */}
-              <div className="space-y-6">
+              {/* Skills list - Espaçamento reduzido */}
+              <div className="space-y-4">
                 {skillsByCategory[category].map((skill) => (
-                  <div key={skill.name} className="space-y-2">
-                    {/* Skill name and proficiency number */}
-                    <div className="flex justify-between items-center">
-                      <span className="font-bold text-white text-lg">
+                  <div key={skill.name} className="group">
+                    {/* Skill name and proficiency */}
+                    <div className="flex justify-between items-end mb-1">
+                      <span className="font-bold text-white text-sm uppercase tracking-wider">
                         {skill.name}
                       </span>
-                      <span className="text-2xl font-black text-accent">
-                        {skill.proficiency}
+                      <span className="text-lg font-black text-accent leading-none">
+                        {skill.proficiency}%
                       </span>
                     </div>
                     
-                    {/* Progress bar - brutal style */}
-                    <div className="relative h-3 bg-secondary border-2 border-white">
+                    {/* Progress bar - Slimmer & Sharper */}
+                    <div className="relative h-2 bg-secondary border border-white/20 overflow-hidden">
                       <div
-                        className="absolute inset-y-0 left-0 bg-accent transition-all duration-500"
+                        className="absolute inset-y-0 left-0 bg-accent transition-all duration-700 ease-out group-hover:bg-white"
                         style={{ width: `${skill.proficiency}%` }}
                       />
                     </div>
@@ -81,141 +88,16 @@ export default function SkillsMatrix() {
             </div>
           ))}
         </div>
-        
-        {/* Decorative element */}
-        <div className="mt-16 flex justify-center">
-          <div className="brutal-border-accent bg-transparent w-64 h-24 flex items-center justify-center">
-            <span className="text-4xl font-black text-accent">
-              {skills.length}+ SKILLS
+
+        {/* Decorative element - Miniaturizado para equilíbrio */}
+        <div className="mt-12 flex justify-center">
+          <div className="brutal-border-accent bg-transparent px-8 py-3 flex items-center justify-center hover:bg-accent hover:text-black transition-colors cursor-default">
+            <span className="text-xl font-black uppercase italic">
+              {skillsData.length} Competências Ativas
             </span>
           </div>
         </div>
       </div>
     </section>
- <section class="skill">
-
-          <h3 class="h3 skills-title">Designer Gráfico</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Adobe Photoshop</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Adobe Illustrator</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Adobe Photoshop Lightroom</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CorelDraw</h5>
-                <data value="65">65%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 65%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-        <br>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">Desenvolvimento Web</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">HTML</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">CSS</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">JAVASCRIPT</h5>
-                <data value="55">55%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">PHP</h5>
-                <data value="15">15%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 15%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-    
   );
 }
