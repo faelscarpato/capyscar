@@ -8,6 +8,23 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { useRef, useMemo } from 'react';
 import * as THREE from 'three';
 
+function supportsWebGL() {
+  if (typeof window === "undefined") {
+    return false;
+  }
+
+  try {
+    const canvas = document.createElement("canvas");
+    return Boolean(
+      canvas.getContext("webgl2") ||
+        canvas.getContext("webgl") ||
+        canvas.getContext("experimental-webgl"),
+    );
+  } catch {
+    return false;
+  }
+}
+
 function WireframeParticles() {
   const meshRef = useRef<THREE.Points>(null);
   const mouseRef = useRef({ x: 0, y: 0 });
@@ -109,11 +126,26 @@ function WireframeGrid() {
 }
 
 export default function WebGLBackground() {
+  const webglAvailable = useMemo(() => supportsWebGL(), []);
+
+  if (!webglAvailable) {
+    return (
+      <div
+        className="fixed inset-0 -z-10 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(1200px 800px at 20% 10%, rgba(132, 204, 22, 0.12), transparent 60%), radial-gradient(800px 600px at 80% 0%, rgba(132, 204, 22, 0.08), transparent 60%)",
+        }}
+        aria-hidden="true"
+      />
+    );
+  }
+
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none">
       <Canvas
         camera={{ position: [0, 0, 5], fov: 75 }}
-        style={{ background: 'transparent' }}
+        style={{ background: "transparent" }}
       >
         <WireframeParticles />
         <WireframeGrid />
@@ -121,3 +153,5 @@ export default function WebGLBackground() {
     </div>
   );
 }
+
+

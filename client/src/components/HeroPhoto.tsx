@@ -4,7 +4,6 @@
  * Interage visualmente via transform (sem tocar no WebGL)
  */
 
-import Image from "next/image";
 
 export default function HeroPhoto() {
   return (
@@ -15,12 +14,12 @@ export default function HeroPhoto() {
         pointer-events-none
       "
     >
-      <Image
+      <img
         src="/images/rafael-portrait.png" // PNG recortado, fundo transparente
         alt="Rafael Scarpato"
         width={520}
         height={700}
-        priority
+        loading="eager"
         className="
           hero-photo
           select-none
@@ -29,3 +28,4 @@ export default function HeroPhoto() {
     </div>
   );
 }
+
