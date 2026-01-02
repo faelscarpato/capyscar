@@ -29,53 +29,88 @@ export interface BlogPost {
 export const projects: Project[] = [
   {
     id: "1",
-    name: "E-Commerce Platform",
-    description: "Plataforma completa de e-commerce com carrinho, pagamentos e painel administrativo",
-    technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Redis"],
-    demoUrl: "https://demo.example.com/ecommerce",
-    githubUrl: "https://github.com/rafael-scarpato/ecommerce"
+    name: "CapyUniverse",
+    description: "Plataforma experimental que reúne múltiplas ferramentas baseadas em IA em uma interface única, explorando design, modularidade e experiência do usuário.",
+    technologies: ["HTML", "CSS", "JavaScript", "APIs", "Design System"], 
+    demoUrl: "https://capyuniverse.pages.dev/",
+    githubUrl: "https://github.com/faelscarpato/capyuniverse"
   },
   {
     id: "2",
-    name: "Real-Time Chat Application",
-    description: "Aplicação de chat em tempo real com suporte a salas, mensagens privadas e notificações",
-    technologies: ["TypeScript", "Socket.io", "Express", "MongoDB", "React"],
-    demoUrl: "https://demo.example.com/chat",
-    githubUrl: "https://github.com/rafael-scarpato/chat-app"
+    name: "CapyUNI - IDE",
+    description: "Ambiente de desenvolvimento web com IA e persistência local, Editor de código leve e moderno no navegador, com suporte a edição persistente (IndexedDB), integração com Monaco Editor e potencial para suporte de IA.",
+    technologies: ["IndexedDB", "React", "TypeScript", "Monaco Editor", "xterm.js"],
+    demoUrl: "https://capyuniv2.pages.dev/",
+    githubUrl: "https://github.com/faelscarpato/capyuniv2"
   },
   {
     id: "3",
-    name: "Task Management System",
-    description: "Sistema de gerenciamento de tarefas com quadros Kanban, colaboração em equipe e relatórios",
-    technologies: ["Next.js", "Prisma", "tRPC", "TailwindCSS", "Vercel"],
-    demoUrl: "https://demo.example.com/tasks",
-    githubUrl: "https://github.com/rafael-scarpato/task-manager"
+    name: "Buscaki",
+    description: "Catálogo de empresas com pesquisa e filtros - Site estático que exibe lista de empresas, com interface de pesquisa e exibição de detalhes. Projeto focado em manipulação de dados locais e interface dinâmica cliente-lado",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    demoUrl: "https://faelscarpato.github.io/Buscaki/",
+    githubUrl: "https://github.com/faelscarpato/Buscaki"
   },
   {
     id: "4",
-    name: "Weather Dashboard",
-    description: "Dashboard meteorológico com previsões, mapas interativos e alertas personalizados",
-    technologies: ["Vue.js", "D3.js", "OpenWeather API", "Mapbox", "Firebase"],
+    name: "Genios",
+    description: "Protótipo para explorar experiências de IA,conversando em liguagem natural com genios do passodo.",
+    technologies: ["React", "TypeScript", "Vite"],
     demoUrl: "https://demo.example.com/weather",
     githubUrl: "https://github.com/rafael-scarpato/weather-dashboard"
   },
   {
     id: "5",
-    name: "AI Content Generator",
-    description: "Ferramenta de geração de conteúdo usando IA com templates customizáveis e exportação",
-    technologies: ["Python", "FastAPI", "OpenAI API", "React", "Docker"],
+    name: "CapyContrato Elite",
+    description: "Aplicação que gera contratos personalizados utilizando a API Gemini. Permite, compor cláusulas, alterar o tom da linguagem e visualizar o contrato antes de exportar",
+    technologies: ["React", "TypeScript", "TailwindCSS", "Vite", "localStorage"],
     demoUrl: "https://demo.example.com/ai-content",
     githubUrl: "https://github.com/rafael-scarpato/ai-generator"
   },
   {
-    id: "6",
-    name: "Fitness Tracking App",
-    description: "Aplicativo de rastreamento de exercícios com gráficos de progresso e planos de treino",
-    technologies: ["React Native", "GraphQL", "Apollo", "PostgreSQL", "AWS"],
-    demoUrl: "https://demo.example.com/fitness",
-    githubUrl: "https://github.com/rafael-scarpato/fitness-tracker"
-  }
-];
+   id: "6",
+  name: "ReGift",
+  description: "Plataforma web para troca e doação de itens que você não usa mais, com foco em praticidade e proximidade. O usuário cria perfil (nome, WhatsApp e raio de busca), publica itens com foto, título e descrição, e navega por um feed tipo swipe mostrando itens próximos com base na geolocalização. Ao curtir, o sistema cria o match e libera o contato direto via WhatsApp para combinar a retirada. Inclui autenticação, upload de imagens e listagem de itens/matches em tempo real via Supabase.",
+  technologies: ["Next.js (App Router)","React","TypeScript","TailwindCSS","Supabase (Auth + Postgres + Storage)","PostGIS / Geolocalização"],
+  demoUrl: "https://regift.pages.dev/",
+  githubUrl: "https://github.com/faelscarpato/regift"
+  },
+  {
+      id: "7",
+  name: "CapyContrato - Elite",
+  description:"CapyChart é um webapp do ecossistema CapyUniverse focado em gerar e visualizar gráficos de forma rápida e bonita. A interface permite inserir dados, escolher tipos de gráfico e visualizar o resultado em tempo real, com layout responsivo e visual ‘capy-style’. O projeto vem estruturado como app moderno em React + Vite, pronto para rodar localmente e evoluir para integrações com Supabase/IA dentro do hub do CapyUniverse.",
+  technologies: ["React","TypeScript","TailwindCSS","Vite","Gemini AP","IndexedDB"],
+  githubUrl: "https://github.com/faelscarpato/capychart"
+  },
+   {
+      id: "8",
+  name: "DaVinci",
+  description:"Assistente criativo que cria aplicações ou códigos com base em um prompt textual, permitindo escolher modos (“app”, “davinci”, “fusion”) e anexar arquivos para melhorar o contexto",
+  technologies: ["React","TypeScript","TailwindCSS","Vite","Gemini AP","IndexedDB"],
+    demoUrl: "https://davinci-82s.pages.dev/",
+   githubUrl: "https://github.com/faelscarpato/DaVinci"
+  },
+   {
+      id: "9",
+  name: "FullSearchAI",
+ description:"Assistente de pesquisa que utiliza Gemini para sintetizar informações de artigos e fontes online, permitindo ajustar complexidade, formato de resposta e idioma",
+  technologies: ["React","TypeScript","TailwindCSS","Vite","Gemini AP","IndexedDB"],
+       demoUrl: "https://fullsearchai.pages.dev/",
+     githubUrl: "https://github.com/faelscarpato/fullsearchai"
+  },
+ {
+  "id": "10",
+  "name": "Cardápio - LandPage de Lanchonete",
+  "description": "LandPage de lanchonete com cardápio interativo e funcionalidade para envio automático do pedido via WhatsApp",
+  "technologies": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "demoUrl": "https://faelscarpato.github.io/cardapio/",
+  "githubUrl": "https://github.com/faelscarpato/cardapio"
+}
+    
 
 export const skills: Skill[] = [
   // Linguagens
