@@ -110,7 +110,7 @@ export const projects: Project[] = [
   "demoUrl": "https://faelscarpato.github.io/cardapio/",
   "githubUrl": "https://github.com/faelscarpato/cardapio"
 }
-    
+  ];
 
 export const skills: Skill[] = [
   // Linguagens
