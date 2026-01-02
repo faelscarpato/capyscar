@@ -1,0 +1,85 @@
+RAFAEL SCARPATO
+Desenvolvedor Full-Stack
+
+=====================================
+
+INFORMAÇÕES DE CONTATO
+Email: rafael.scarpato@email.com
+GitHub: github.com/rafael-scarpato
+LinkedIn: linkedin.com/in/rafael-scarpato
+Localização: Brasil
+
+=====================================
+
+RESUMO PROFISSIONAL
+
+Desenvolvedor Full-Stack com experiência em construção de aplicações web modernas e escaláveis. 
+Especializado em React, Node.js e arquiteturas full-stack, com foco em performance, 
+experiência do usuário e código limpo.
+
+=====================================
+
+HABILIDADES TÉCNICAS
+
+Linguagens:
+- JavaScript (Avançado)
+- TypeScript (Avançado)
+- Python (Intermediário)
+- SQL (Avançado)
+
+Front-end:
+- React, Next.js, Vue.js
+- TailwindCSS, Three.js
+- HTML5, CSS3
+
+Back-end:
+- Node.js, Express
+- FastAPI, GraphQL, tRPC
+
+Bancos de Dados:
+- PostgreSQL, MongoDB, Redis
+- Prisma ORM
+
+DevOps & Ferramentas:
+- Docker, AWS, Kubernetes
+- Git, CI/CD
+- Jest, Vitest, Playwright
+
+=====================================
+
+PROJETOS DESTACADOS
+
+E-Commerce Platform
+- Plataforma completa com carrinho, pagamentos Stripe e painel admin
+- Stack: React, Node.js, PostgreSQL, Redis
+
+Real-Time Chat Application
+- Chat em tempo real com salas e notificações
+- Stack: TypeScript, Socket.io, Express, MongoDB
+
+Task Management System
+- Sistema Kanban com colaboração em equipe
+- Stack: Next.js, Prisma, tRPC, TailwindCSS
+
+=====================================
+
+EXPERIÊNCIA PROFISSIONAL
+
+[Adicione sua experiência profissional aqui]
+
+=====================================
+
+FORMAÇÃO ACADÊMICA
+
+[Adicione sua formação acadêmica aqui]
+
+=====================================
+
+IDIOMAS
+
+- Português (Nativo)
+- Inglês (Fluente)
+
+=====================================
+
+Este é um arquivo placeholder. Substitua por seu currículo real em formato PDF.
