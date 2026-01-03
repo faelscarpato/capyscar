@@ -6,7 +6,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Instagram, Download, Mail } from "lucide-react";
+import { Github, Linkedin, Twitter, Download, Mail } from "lucide-react";
 import { useState, FormEvent } from "react";
 import { useNotification } from "@/contexts/NotificationContext";
 
@@ -78,18 +78,18 @@ export default function ContactFooter() {
   const socialLinks = [
     {
       name: "GitHub",
-      url: "https://github.com/faelscarpato",
+      url: "https://github.com/rafael-scarpato",
       icon: Github
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/faelscarpato",
+      url: "https://linkedin.com/in/rafael-scarpato",
       icon: Linkedin
     },
     {
       name: "Twitter",
-      url: "https://instagram/rafaelscarpato",
-      icon: Instagram
+      url: "https://twitter.com/rafael-scarpato",
+      icon: Twitter
     }
   ];
   
