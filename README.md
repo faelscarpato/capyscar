@@ -2,6 +2,9 @@
 
 Site de portfólio moderno e responsivo para desenvolvedor full-stack, construído com React, Vite, TailwindCSS e Three.js.
 
+<img width="1366" height="617" alt="image" src="https://github.com/user-attachments/assets/f2184734-61e4-4f49-8d15-cdc767d40d52" />
+
+---
 ## 🎨 Design
 
 Este projeto utiliza o estilo **Neo-Brutalismo Digital**, caracterizado por:
