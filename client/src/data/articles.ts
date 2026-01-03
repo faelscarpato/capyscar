@@ -11,7 +11,7 @@ export const articles: Article[] = [
   {
     id: "1",
     title: "O que é Engenharia de Prompt em 2026",
-    date: "2026-01-15",
+    date: "2026-01-01",
     tags: ["Prompting", "IA", "JSON", "DSPy"],
     summary:
       "Em 2026, engenharia de prompt vira programação declarativa com formatos estruturados como JSON, XML e Markdown.",
@@ -28,7 +28,7 @@ Tendência 2026: ferramentas como DSPy estão automatizando a escrita de prompts
   {
     id: "2",
     title: "Sintaxe Técnica: Por que JSON, XML e Markdown Importam",
-    date: "2026-02-01",
+    date: "2026-01-02",
     tags: ["JSON", "XML", "Markdown", "Prompting"],
     summary:
       "Prompts soltos são imprecisos; JSON, XML e Markdown trazem estrutura, separação e hierarquia.",
