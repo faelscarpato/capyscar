@@ -15,8 +15,8 @@ const techBadges = [
   "Node.js",
   "Python",
   "PostgreSQL",
-  "Docker",
-  "AWS"
+  "Html",
+  "CSS"
 ];
 
 export default function Hero() {
