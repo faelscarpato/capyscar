@@ -51,7 +51,7 @@ Consolidado 2026: OpenAI GPT-4.1 e Gemini 2.5 oferecem "strict JSON mode" - zero
   {
     id: "3",
     title: "Prompts Modulares: A Arquitetura que Escala",
-    date: "2026-02-18",
+    date: "2026-01-03",
     tags: ["Arquitetura", "Modularização", "Prompting", "OPRO"],
     summary:
       "Prompt monolítico vira ingovernável; modularização reduz custos e aumenta consistência entre casos de uso.",
@@ -79,7 +79,7 @@ Projeção 2026: "Engenharia de prompt manual" vira legacy. Você declara a arqu
   {
     id: "4",
     title: "Few-Shot Dinâmico: Exemplos que se Adaptam ao Contexto",
-    date: "2026-03-05",
+    date: "2026-01-04",
     tags: ["Few-shot", "Embeddings", "Chroma", "DSPy"],
     summary:
       "Few-shot dinâmico seleciona exemplos por similaridade e melhora acurácia com menos custo de tokens.",
@@ -107,7 +107,7 @@ Consolidado 2026: LangSmith e DSPy oferecem seletores de few-shot dinâmico pron
   {
     id: "5",
     title: "Auto-Prompting e RSIP: A IA que se Auto-Melhora",
-    date: "2026-03-20",
+    date: "2026-01-05",
     tags: ["RSIP", "Auto-Prompting", "Otimização", "IA"],
     summary:
       "RSIP critica e refina prompts em ciclos até convergir; útil quando você precisa de flexibilidade rápida.",
@@ -134,7 +134,7 @@ Tendência 2026: frameworks como DSPy integram RSIP nativo - você não escreve 
   {
     id: "6",
     title: "Constitutional AI: Governança Ética Sem Burocracia",
-    date: "2026-04-07",
+    date: "2026-01-05",
     tags: ["Constitutional AI", "Ética", "Governança", "IA"],
     summary:
       "Princípios explícitos guiam respostas e permitem governança escalável sem regras hardcoded.",
@@ -167,7 +167,7 @@ Tendência 2026: constituições dinâmicas que se atualizam automaticamente qua
   {
     id: "7",
     title: "Prompting Reverso: Aprenda com as Respostas da IA",
-    date: "2026-04-22",
+    date: "2026-01-05",
     tags: ["Prompting Reverso", "Drift", "Auditoria", "Datasets"],
     summary:
       "Reconstrói prompts a partir de outputs para reutilizar, auditar drift e gerar datasets.",
@@ -192,7 +192,7 @@ Ferramentas: LangSmith, Maxim AI e Vellum oferecem dashboards de "prompt behavio
   {
     id: "8",
     title: "Tool Use: Como a IA Usa Ferramentas Externas",
-    date: "2026-05-10",
+    date: "2026-01-05",
     tags: ["Tool Use", "Function Calling", "APIs", "Automação"],
     summary:
       "Function calling retorna JSON estruturado para executar funções externas e reduzir alucinação.",
@@ -216,7 +216,7 @@ Consolidado 2026: GPT-4o e Claude 3.5 suportam chamadas paralelas - invocar 5 fe
   {
     id: "9",
     title: "Agentes Autônomos: Planner + Executor + Crítico",
-    date: "2026-05-28",
+    date: "2026-01-05",
     tags: ["Agentes", "Orquestração", "Planner", "Segurança"],
     summary:
       "Arquitetura com planner, executor e juiz valida ações e mantém segurança em sistemas autônomos.",
@@ -239,7 +239,7 @@ Tendência 2026: agentes com "constituições dinâmicas" que se adaptam ao cont
   {
     id: "10",
     title: "Orquestração Multimodal: Texto, Imagem, Vídeo e Áudio",
-    date: "2026-06-15",
+    date: "2026-01-05",
     tags: ["Multimodal", "Orquestração", "Visão", "Áudio"],
     summary:
       "Coordena fluxos multimodais com normalização de inputs e processamento paralelo por agentes especializados.",
